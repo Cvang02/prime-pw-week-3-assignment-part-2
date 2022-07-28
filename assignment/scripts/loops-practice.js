@@ -22,7 +22,7 @@ for (let i=0; i<6; i++) {
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 3 to 5');
 
-for (let i=3; i<6; i++) {
+for (let i=3; i<=5; i++) {
   console.log(i)
 }
 
@@ -30,15 +30,14 @@ for (let i=3; i<6; i++) {
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
 
-for (let i=2; i<11; i++) {
-  if(i%2 === 0)
+for (let i=2; i<=10; i+=2) {
   console.log(i)
 }
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
 
-for (let i=5; i>-1; i--) {
+for (let i=5; i>=0; i--) {
   console.log(i)
 }
 
@@ -49,8 +48,8 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
 
-for (i=0; i<stars.length; i++) {
-  console.log('Some stars:', stars[i]);
+for (let planets of stars) {
+  console.log('For of Loop stars:', planets);
 }
 
 // 3. While loops  
@@ -72,9 +71,9 @@ while (galaxy<stars.length) {
 console.log('count from 0 to 5');
 
 let index = 0;
-let max = 6;
+let max = 5;
 
-while (index<max) {
+while (index<=max) {
   console.log('while loop:', index);
   index++;
 }
@@ -82,10 +81,10 @@ while (index<max) {
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
 
-index = 4;
+index = 5;
 max = 10;
 
-while (max>index) {
+while (max>=index) {
   console.log('while loop:', max);
   max--;
 }
